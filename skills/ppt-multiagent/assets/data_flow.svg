@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 380">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#3B82F6"/>
+    </marker>
+    <marker id="depArrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#F59E0B"/>
+    </marker>
+  </defs>
+
+  <rect width="680" height="380" fill="#FAFBFC" rx="8"/>
+  <text x="340" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#1E293B">智能体数据流转协议</text>
+
+  <!-- Phase labels -->
+  <rect x="35" y="50" width="120" height="24" rx="4" fill="#E2E8F0"/>
+  <text x="95" y="66" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#475569">输入 (Input)</text>
+
+  <rect x="265" y="50" width="150" height="24" rx="4" fill="#DBEAFE"/>
+  <text x="340" y="66" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#1E40AF">处理 (Process)</text>
+
+  <rect x="525" y="50" width="120" height="24" rx="4" fill="#DCFCE7"/>
+  <text x="585" y="66" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#166534">输出 (Output)</text>
+
+  <!-- ===== Agent-A Row ===== -->
+  <!-- Input -->
+  <rect x="20" y="88" width="155" height="50" rx="5" fill="#FFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="97" y="106" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#64748B">用户需求+大纲</text>
+  <text x="97" y="122" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#94A3B8">自然语言描述</text>
+  <text x="97" y="134" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#94A3B8">+ 互动确认结果</text>
+
+  <line x1="175" y1="113" x2="255" y2="113" stroke="#3B82F6" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+  <!-- Process -->
+  <rect x="258" y="88" width="165" height="50" rx="5" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.2"/>
+  <text x="340" y="106" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="bold" fill="#92400E">Agent-A 风格判定</text>
+  <text x="340" y="122" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#A16207">受众匹配 → 维度填充</text>
+  <text x="340" y="134" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#A16207">模板分配 → style_profile</text>
+
+  <line x1="423" y1="113" x2="510" y2="113" stroke="#3B82F6" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+  <!-- Output -->
+  <rect x="513" y="88" width="152" height="50" rx="5" fill="#DCFCE7" stroke="#22C55E" stroke-width="1.2"/>
+  <text x="589" y="104" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" font-weight="bold" fill="#166534">style_profile.json</text>
+  <text x="589" y="120" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#166534">{canvas, colors,</text>
+  <text x="589" y="132" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#166534"> typography, ...}</text>
+
+  <!-- Dependency arrow A→B -->
+  <path d="M589,138 L589,170 L97,170 L97,188" fill="none" stroke="#F59E0B" stroke-width="1.2" stroke-dasharray="6,3" marker-end="url(#depArrow)"/>
+  <text x="340" y="183" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#F59E0B">依赖：B 需要 A 的 style_profile</text>
+
+  <!-- ===== Agent-B Row ===== -->
+  <rect x="20" y="198" width="155" height="50" rx="5" fill="#FFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="97" y="216" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#64748B">style_profile + 大纲</text>
+  <text x="97" y="232" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#94A3B8">风格参数 + 页面结构</text>
+  <text x="97" y="244" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#94A3B8">+ 用户原始内容</text>
+
+  <line x1="175" y1="223" x2="255" y2="223" stroke="#3B82F6" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+  <rect x="258" y="198" width="165" height="50" rx="5" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.2"/>
+  <text x="340" y="216" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="bold" fill="#92400E">Agent-B 视觉采集</text>
+  <text x="340" y="232" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#A16207">语义分析 → 策略选择</text>
+  <text x="340" y="244" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#A16207">搜索/下载/生成 → 素材清单</text>
+
+  <line x1="423" y1="223" x2="510" y2="223" stroke="#3B82F6" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+  <rect x="513" y="198" width="152" height="50" rx="5" fill="#DCFCE7" stroke="#22C55E" stroke-width="1.2"/>
+  <text x="589" y="214" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" font-weight="bold" fill="#166534">visual_assets.json</text>
+  <text x="589" y="230" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#166534">[{slide_index,</text>
+  <text x="589" y="242" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#166534">  assets: [{path, ...}]}]</text>
+
+  <!-- Dependency arrow B→C -->
+  <path d="M589,248 L589,280 L97,280 L97,298" fill="none" stroke="#F59E0B" stroke-width="1.2" stroke-dasharray="6,3" marker-end="url(#depArrow)"/>
+  <text x="340" y="293" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#F59E0B">依赖：C 需要 B 的素材路径</text>
+
+  <!-- ===== Agent-C Row ===== -->
+  <rect x="20" y="308" width="155" height="55" rx="5" fill="#FFF" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="97" y="322" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#64748B">style_profile +</text>
+  <text x="97" y="336" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#64748B">visual_assets +</text>
+  <text x="97" y="350" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#64748B">内容数据</text>
+  <text x="97" y="362" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#94A3B8">.pptx 待消费</text>
+
+  <line x1="175" y1="335" x2="255" y2="335" stroke="#3B82F6" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+  <rect x="258" y="308" width="165" height="55" rx="5" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.2"/>
+  <text x="340" y="326" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="bold" fill="#92400E">Agent-C 内容融合</text>
+  <text x="340" y="342" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#A16207">模板分发 → 内容精炼</text>
+  <text x="340" y="356" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#A16207">python-pptx → .pptx</text>
+
+  <line x1="423" y1="335" x2="510" y2="335" stroke="#3B82F6" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+  <rect x="513" y="308" width="152" height="55" rx="5" fill="#22C55E" opacity="0.12" stroke="#22C55E" stroke-width="1.5"/>
+  <text x="589" y="330" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" font-weight="bold" fill="#166534">output.pptx</text>
+  <text x="589" y="348" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#166534">最终演示文稿</text>
+  <text x="589" y="360" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#166534">N 页幻灯片</text>
+
+  <!-- Legend -->
+  <rect x="20" y="376" width="645" height="2" fill="#E2E8F0"/>
+</svg>

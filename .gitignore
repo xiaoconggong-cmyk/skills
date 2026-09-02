@@ -1,0 +1,7 @@
+# WorkBuddy 项目本地数据（含个人记忆/凭证），不公开
+.workbuddy/
+
+# 依赖与临时文件
+node_modules/
+*.bak
+*.tmp

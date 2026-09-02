@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>PPT 多智能体系统 — 模板效果预览</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,-apple-system,sans-serif;background:#F1F5F9;padding:24px;color:#1E293B}
+h1{text-align:center;margin-bottom:8px;font-size:22px}
+.subtitle{text-align:center;color:#64748B;margin-bottom:32px;font-size:13px}
+.section-title{font-size:16px;font-weight:700;color:#1E40AF;margin:28px 0 12px;padding-left:8px;border-left:3px solid #3B82F6}
+.slide-grid{display:flex;flex-wrap:wrap;gap:16px;justify-content:center}
+.slide-card{background:#FFF;border-radius:6px;box-shadow:0 1px 4px rgba(0,0,0,.08);overflow:hidden;width:360px}
+.slide-label{background:#F8FAFC;padding:6px 12px;font-size:11px;color:#64748B;border-bottom:1px solid #E2E8F0}
+.slide-preview{position:relative;overflow:hidden}
+
+/* Academic style slides */
+.slide-academic{width:360px;height:270px;background:#FFF;position:relative;font-family:system-ui,sans-serif}
+.slide-academic .cover-title{position:absolute;left:20px;right:20px;top:54px;text-align:center;font-size:22px;font-weight:700;color:#000}
+.slide-academic .cover-sub{position:absolute;left:20px;right:20px;top:145px;text-align:center;font-size:14px;color:#000}
+.slide-academic .cover-date{position:absolute;left:20px;right:20px;bottom:28px;text-align:center;font-size:12px;color:#000}
+.slide-academic .sec-title{position:absolute;left:20px;top:6px;font-size:15px;font-weight:700;color:#000}
+.slide-academic .sub-title{position:absolute;left:20px;top:36px;font-size:13px;color:#000}
+.slide-academic .body-text{position:absolute;left:20px;right:20px;top:68px;font-size:11px;line-height:1.6;color:#000}
+.slide-academic .em-red{color:#FF0000;font-weight:700}
+.slide-academic .tag{position:absolute;bottom:16px;border:1px solid #7030A0;border-radius:12px;padding:2px 10px;font-size:9px;color:#7030A0;font-weight:700}
+.slide-academic .col-title{font-size:13px;font-weight:700;text-align:center;margin-bottom:4px}
+.slide-academic .col-body{font-size:10px;text-align:center;line-height:1.5;color:#000}
+.slide-academic table{width:100%;border-collapse:collapse;font-size:10px}
+.slide-academic th{background:#F3F4F6;padding:4px 6px;font-weight:700;text-align:center}
+.slide-academic td{padding:4px 6px;text-align:center;border-bottom:1px solid #E5E7EB}
+.slide-academic .kp{font-size:11px;line-height:1.6}
+.slide-academic .sum-sec{font-size:14px;font-weight:700;margin:6px 0}
+.slide-academic .sum-item{font-size:11px;line-height:1.5;margin:2px 0}
+
+/* Business style slides */
+.slide-business{width:360px;height:203px;background:#FFF;position:relative;font-family:system-ui,sans-serif}
+.slide-business.dark{background:#1E293B}
+.slide-business .biz-bar{position:absolute;top:0;left:0;right:0;height:5px;background:#2563EB}
+.slide-business .biz-title{font-size:16px;font-weight:700;color:#1E293B}
+.slide-business .biz-item{font-size:12px;color:#1E293B;line-height:1.8}
+.slide-business .biz-cover-title{color:#FFF;font-size:24px;font-weight:700;text-align:center}
+.slide-business .biz-cover-sub{color:#94A3B8;font-size:13px;text-align:center}
+.slide-business .biz-cover-line{background:#2563EB;height:2px;width:120px;margin:0 auto}
+.slide-business .biz-cover-date{color:#64748B;font-size:11px;text-align:center}
+
+.legend{display:flex;gap:20px;justify-content:center;margin:24px 0;font-size:11px;color:#64748B}
+.legend span{display:flex;align-items:center;gap:4px}
+.legend .dot{width:10px;height:10px;border-radius:50%}
+.footer{text-align:center;color:#94A3B8;font-size:11px;margin-top:32px}
+.generated{background:#FEF3C7;padding:2px 8px;border-radius:4px;font-size:10px;margin-left:8px}
+</style>
+</head>
+<body>
+
+<h1>PPT 多智能体自动生成系统 — 模板效果预览</h1>
+<p class="subtitle">以下幻灯片由模板代码自动生成（python-pptx），展示两种典型风格的模板输出效果</p>
+
+<div class="legend">
+  <span><b>强调规范：</b></span>
+  <span><span class="dot" style="background:#FF0000"></span> 红色 #FF0000 — 核心概念/数据强调</span>
+  <span><span class="dot" style="background:#7030A0"></span> 紫色 #7030A0 — 独立概念分类标签</span>
+  <span><span class="dot" style="background:#2563EB"></span> 蓝色 #2563EB — 商务品牌贯穿</span>
+</div>
+
+<!-- ===== Academic Demo ===== -->
+<div class="section-title">风格 A：极简学术风 <span class="generated">auto-generated</span></div>
+<p style="padding-left:8px;font-size:12px;color:#64748B;margin-bottom:8px">
+  decoration_level=0 | 4:3 (10x7.5") | 色彩=关键强调 | 字体=系统默认 | 密度=高
+</p>
+<div class="slide-grid">
+
+  <!-- Slide 1: Cover -->
+  <div class="slide-card">
+    <div class="slide-label">第 1 页 · cover 模板 · 封面</div>
+    <div class="slide-preview">
+      <div class="slide-academic">
+        <div class="cover-title">深度学习异常检测<br>研究进展</div>
+        <div class="cover-sub">主动视觉语言推理方法</div>
+        <div class="cover-date">2026年3月 大组会汇报</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 2: Content with emphasis -->
+  <div class="slide-card">
+    <div class="slide-label">第 2 页 · content 模板 · 正文 + 关键词红色强调 + 概念紫色标签</div>
+    <div class="slide-preview">
+      <div class="slide-academic">
+        <div class="sec-title">1. 研究背景</div>
+        <div class="sub-title">异常检测是工业视觉中的核心挑战</div>
+        <div class="body-text">
+          工业场景中，异常检测面临三大核心挑战：<span class="em-red">样本稀缺</span>导致训练数据高度不平衡；<span class="em-red">异常形态多样</span>使得单一模型难以泛化；<span class="em-red">实时性要求</span>对推理速度提出严格约束。传统方法依赖人工特征工程，在复杂场景下<span class="em-red">准确率不足60%</span>。
+        </div>
+        <span class="tag" style="left:80px">Anomaly Detection</span>
+        <span class="tag" style="left:210px">Few-shot Learning</span>
+        <span class="tag" style="left:330px;font-size:8px">Real-time</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 3: Multi-col -->
+  <div class="slide-card">
+    <div class="slide-label">第 3 页 · multi_col 模板 · 三栏方法对比（无装饰）</div>
+    <div class="slide-preview">
+      <div class="slide-academic">
+        <div class="sec-title">2. 相关方法对比</div>
+        <div style="position:absolute;left:20px;right:20px;top:64px;display:flex;gap:8px">
+          <div style="flex:1">
+            <div class="col-title">传统方法</div>
+            <div class="col-body">手工特征工程<br>准确率 58.3%<br>泛化能力弱</div>
+          </div>
+          <div style="flex:1">
+            <div class="col-title">CNN-based</div>
+            <div class="col-body">端到端特征学习<br>准确率 76.1%<br>需大量标注</div>
+          </div>
+          <div style="flex:1">
+            <div class="col-title">VLM-based (Ours)</div>
+            <div class="col-body">视觉语言联合<br>准确率 89.4%<br>Few-shot适应</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 4: Table -->
+  <div class="slide-card">
+    <div class="slide-label">第 4 页 · table_data 模板 · 实验结果表格 + 关键发现</div>
+    <div class="slide-preview">
+      <div class="slide-academic">
+        <div class="sec-title">3. 实验结果</div>
+        <div style="position:absolute;left:20px;top:50px;width:180px">
+          <table>
+            <tr><th>Method</th><th>MVTec</th><th>VisA</th><th>BTAD</th><th>Avg</th></tr>
+            <tr><td>PaDiM</td><td>85.7</td><td>72.1</td><td>78.4</td><td>78.7</td></tr>
+            <tr><td>PatchCore</td><td>87.3</td><td>74.6</td><td>80.2</td><td>80.7</td></tr>
+            <tr><td>CFA</td><td>88.9</td><td>76.3</td><td>82.1</td><td>82.4</td></tr>
+            <tr style="font-weight:700"><td>Ours</td><td>94.2</td><td>88.5</td><td>90.3</td><td>91.0</td></tr>
+          </table>
+        </div>
+        <div style="position:absolute;right:20px;top:50px;width:130px">
+          <div style="font-size:13px;font-weight:700;margin-bottom:6px">关键发现</div>
+          <div class="kp">MVTec SOTA +5.3%<br>VisA +12.2%<br>推理 23 FPS<br>Few-shot >87%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 5: Summary -->
+  <div class="slide-card">
+    <div class="slide-label">第 5 页 · summary 模板 · 总结与展望</div>
+    <div class="slide-preview">
+      <div class="slide-academic">
+        <div class="sec-title">4. 总结与展望</div>
+        <div style="position:absolute;left:20px;top:46px;right:20px">
+          <div class="sum-sec">总结</div>
+          <div class="sum-item">• 提出主动视觉语言推理框架，融合视觉特征与语义先验</div>
+          <div class="sum-item">• 在 4 个基准数据集上取得 SOTA，平均提升 8.6%</div>
+          <div class="sum-item">• Few-shot 泛化能力显著优于纯视觉方法</div>
+          <div class="sum-item">• 推理效率满足工业实时检测需求（23 FPS）</div>
+          <div class="sum-sec" style="margin-top:10px">后续计划</div>
+          <div class="sum-item">• 扩展到 3D 点云异常检测场景</div>
+          <div class="sum-item">• 探索多模态大模型的零样本异常识别</div>
+          <div class="sum-item">• 与生产线系统集成，进行实地验证</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Business Demo ===== -->
+<div class="section-title">风格 B：专业商务风 <span class="generated">auto-generated</span></div>
+<p style="padding-left:8px;font-size:12px;color:#64748B;margin-bottom:8px">
+  decoration_level=3 | 16:9 (13.33x7.5") | 品牌识别 | 蓝色 #2563EB 贯穿 | 密度=中
+</p>
+<div class="slide-grid">
+
+  <!-- Slide 1: Dark Cover -->
+  <div class="slide-card">
+    <div class="slide-label">第 1 页 · cover 模板 · 深色封面 + 蓝色装饰线</div>
+    <div class="slide-preview">
+      <div class="slide-business dark">
+        <div style="position:absolute;left:20px;right:20px;top:40px">
+          <div class="biz-cover-title">AI-Native</div>
+        </div>
+        <div style="position:absolute;left:20px;right:20px;top:90px">
+          <div class="biz-cover-sub">下一代工业视觉检测平台</div>
+        </div>
+        <div style="position:absolute;left:0;right:0;bottom:30px">
+          <div class="biz-cover-line"></div>
+        </div>
+        <div style="position:absolute;left:20px;right:20px;bottom:10px">
+          <div class="biz-cover-date">2026年7月 · 天使轮融资路演</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 2: Content with brand bar -->
+  <div class="slide-card">
+    <div class="slide-label">第 2 页 · content 模板 · 蓝色顶栏 + 品牌色贯穿</div>
+    <div class="slide-preview">
+      <div class="slide-business">
+        <div class="biz-bar"></div>
+        <div style="position:absolute;left:16px;top:12px">
+          <div class="biz-title">市场机遇</div>
+        </div>
+        <div style="position:absolute;left:16px;top:50px;right:16px">
+          <div class="biz-item">• 全球工业视觉市场 2026 年达 180 亿美元，CAGR 12.7%</div>
+          <div class="biz-item">• AI 视觉检测渗透率仅 23%，替代空间巨大</div>
+          <div class="biz-item">• 制造业人力成本年均上涨 8%，自动化需求迫切</div>
+          <div class="biz-item">• 政策端：智能制造 2025 专项资金有力支撑</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  PPT 多智能体自动生成系统 v4.0 · 模板代码自动生成 · 2026-07-17<br>
+  实际 .pptx 文件：demo_academic.pptx（5页）| demo_business.pptx（2页）
+</div>
+
+</body>
+</html>

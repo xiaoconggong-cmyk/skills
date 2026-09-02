@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420">
+  <!-- Background -->
+  <rect width="680" height="420" fill="#FAFBFC" rx="8"/>
+  <text x="340" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#1E293B">风格六维度参数框架</text>
+
+  <!-- Hexagon layout: 6 dimensions arranged in a circle -->
+  <circle cx="340" cy="230" r="145" fill="none" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Center: style_profile -->
+  <rect x="290" y="200" width="100" height="60" rx="8" fill="#3B82F6" opacity="0.12" stroke="#3B82F6" stroke-width="1.5"/>
+  <text x="340" y="225" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="bold" fill="#1E40AF">style_</text>
+  <text x="340" y="240" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" font-weight="bold" fill="#1E40AF">profile</text>
+  <text x="340" y="255" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#64748B">JSON</text>
+
+  <!-- Dimension 1: Canvas (top) -->
+  <rect x="260" y="48" width="160" height="56" rx="6" fill="#FFF" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="260" y="48" width="160" height="20" rx="6" fill="#3B82F6" opacity="0.15"/>
+  <text x="340" y="62" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#1E40AF">基础画布 Canvas</text>
+  <text x="340" y="80" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#64748B">16:9 / 4:3 / 自定义</text>
+  <text x="340" y="96" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#94A3B8">影响内容密度和投影兼容性</text>
+  <line x1="340" y1="104" x2="340" y2="150" stroke="#CBD5E1" stroke-width="0.8"/>
+
+  <!-- Dimension 2: Color (top-right) -->
+  <rect x="460" y="115" width="170" height="56" rx="6" fill="#FFF" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="460" y="115" width="170" height="20" rx="6" fill="#10B981" opacity="0.12"/>
+  <text x="545" y="129" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#065F46">色彩策略 Color</text>
+  <text x="545" y="147" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#64748B">品牌贯穿 / 功能区分 / 关键强调</text>
+  <text x="545" y="163" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#94A3B8">从强调到装饰的 3 种角色模式</text>
+
+  <!-- Dimension 3: Typography (bottom-right) -->
+  <rect x="460" y="270" width="170" height="56" rx="6" fill="#FFF" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="460" y="270" width="170" height="20" rx="6" fill="#F59E0B" opacity="0.12"/>
+  <text x="545" y="284" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#92400E">字体策略 Typography</text>
+  <text x="545" y="302" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#64748B">系统默认 / 品牌字体 / 自定义</text>
+  <text x="545" y="318" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#94A3B8">6 级字体层级自动推导</text>
+
+  <!-- Dimension 4: Decoration (bottom) -->
+  <rect x="260" y="340" width="160" height="56" rx="6" fill="#FFF" stroke="#EF4444" stroke-width="1.5"/>
+  <rect x="260" y="340" width="160" height="20" rx="6" fill="#EF4444" opacity="0.12"/>
+  <text x="340" y="354" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#991B1B">装饰密度 Decoration ★</text>
+  <text x="340" y="372" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#64748B">0-5 级：极简 → 创意</text>
+  <text x="340" y="388" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#94A3B8">最关键的风格区分维度</text>
+
+  <!-- Dimension 5: Density (bottom-left) -->
+  <rect x="50" y="270" width="170" height="56" rx="6" fill="#FFF" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="50" y="270" width="170" height="20" rx="6" fill="#8B5CF6" opacity="0.12"/>
+  <text x="135" y="284" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#5B21B6">信息密度 Density</text>
+  <text x="135" y="302" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#64748B">低(3行) / 中(5行) / 高(8行)</text>
+  <text x="135" y="318" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#94A3B8">学术高密度 vs 路演低密度</text>
+
+  <!-- Dimension 6: Image-Text (top-left) -->
+  <rect x="50" y="115" width="170" height="56" rx="6" fill="#FFF" stroke="#CBD5E1" stroke-width="1"/>
+  <rect x="50" y="115" width="170" height="20" rx="6" fill="#EC4899" opacity="0.12"/>
+  <text x="135" y="129" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" font-weight="bold" fill="#831843">图文关系 Image</text>
+  <text x="135" y="147" text-anchor="middle" font-family="system-ui,sans-serif" font-size="9" fill="#64748B">证据支撑 / 情感渲染 / 装饰美化</text>
+  <text x="135" y="163" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#94A3B8">决定图片的采集策略和内容方向</text>
+
+  <!-- Connecting lines from center to dimensions -->
+  <line x1="340" y1="200" x2="340" y2="104" stroke="#3B82F6" stroke-width="0.8" opacity="0.4"/>
+  <line x1="390" y1="215" x2="460" y2="143" stroke="#3B82F6" stroke-width="0.8" opacity="0.4"/>
+  <line x1="390" y1="240" x2="460" y2="298" stroke="#3B82F6" stroke-width="0.8" opacity="0.4"/>
+  <line x1="340" y1="260" x2="340" y2="340" stroke="#3B82F6" stroke-width="0.8" opacity="0.4"/>
+  <line x1="290" y1="240" x2="220" y2="298" stroke="#3B82F6" stroke-width="0.8" opacity="0.4"/>
+  <line x1="290" y1="215" x2="220" y2="143" stroke="#3B82F6" stroke-width="0.8" opacity="0.4"/>
+
+  <!-- Legend -->
+  <rect x="180" y="410" width="320" height="8" rx="2" fill="#F8FAFC"/>
+  <text x="340" y="418" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#94A3B8">★ 装饰密度为核心维度，其他维度围绕它展开；所有参数写入 style_profile JSON</text>
+</svg>
