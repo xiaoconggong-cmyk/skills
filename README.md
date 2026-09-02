@@ -34,13 +34,13 @@ skills/
 
 将所需技能目录复制到技能目录下：
 
-- **用户级**（所有项目可用）：`~/.workbuddy/skills/<name>/`
-- **项目级**（仅当前项目）：`<项目根>/.workbuddy/skills/<name>/`
+- **用户级**（所有项目可用）：`~/skills/<name>/`
+- **项目级**（仅当前项目）：`<项目根>/skills/<name>/`
 
 示例（PowerShell / Git Bash）：
 
 ```bash
-cp -r skills/ppt-multiagent ~/.workbuddy/skills/
+cp -r skills/ppt-multiagent ~/skills/
 ```
 
 ## 使用方法
@@ -54,8 +54,4 @@ cp -r skills/ppt-multiagent ~/.workbuddy/skills/
    - PPT 多智能体生成按 `skills/ppt-multiagent/SKILL.md` 中的说明调用。
 4. 每个技能的能力、参数与执行流程，以该目录下的 `SKILL.md` 为准。
 
-## 说明
 
-- 本仓库已通过 `.gitignore` 排除 `.workbuddy` 项目本地数据（含个人记忆与凭证），不会上传。
-- 各技能为可复用的工作流定义，需配合对应运行环境使用。
-- `node_modules/`、`*.bak`、`*.tmp` 等依赖与临时文件已排除。
