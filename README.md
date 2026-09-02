@@ -1,6 +1,6 @@
-# WorkBuddy Skills 合集
+# AI 技能合集
 
-本人（[xiaoconggong-cmyk](https://github.com/xiaoconggong-cmyk)）使用 WorkBuddy 开发并维护的 AI 技能（Skills）集合。每个子目录 `skills/<name>/` 对应一个可独立安装的技能，核心定义见各目录下的 `SKILL.md`。
+本仓库收录若干可直接安装的 AI 技能（Skills），每个子目录 `skills/<name>/` 对应一个独立技能，核心定义见各目录下的 `SKILL.md`。
 
 ## 技能清单
 
@@ -32,7 +32,7 @@ skills/
 
 ## 安装方法
 
-将所需技能目录复制到 WorkBuddy 的技能目录之一：
+将所需技能目录复制到技能目录下：
 
 - **用户级**（所有项目可用）：`~/.workbuddy/skills/<name>/`
 - **项目级**（仅当前项目）：`<项目根>/.workbuddy/skills/<name>/`
@@ -43,10 +43,19 @@ skills/
 cp -r skills/ppt-multiagent ~/.workbuddy/skills/
 ```
 
-安装后重启 WorkBuddy 或在对话中通过 `/<skill>` 调用（如 `/ppt-multiagent`）。
+## 使用方法
+
+1. 按上方「安装方法」把技能目录复制到对应技能目录。
+2. 重启运行环境，使技能生效（新复制的技能会被自动加载）。
+3. 在对话中按各技能的触发方式调用，例如：
+   - 输入"管家模式，帮我……"→ 触发多智能体协作系统；
+   - 输入"论文流水线"→ 触发论文写作流水线；
+   - 输入"制作简历 / 模拟面试"→ 触发简历制作与优化；
+   - PPT 多智能体生成按 `skills/ppt-multiagent/SKILL.md` 中的说明调用。
+4. 每个技能的能力、参数与执行流程，以该目录下的 `SKILL.md` 为准。
 
 ## 说明
 
 - 本仓库已通过 `.gitignore` 排除 `.workbuddy` 项目本地数据（含个人记忆与凭证），不会上传。
-- 各技能依赖 WorkBuddy 运行环境，单独的 Markdown 文件不可脱离平台直接执行。
+- 各技能为可复用的工作流定义，需配合对应运行环境使用。
 - `node_modules/`、`*.bak`、`*.tmp` 等依赖与临时文件已排除。
